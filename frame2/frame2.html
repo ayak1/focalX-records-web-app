@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frame2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+<body id="body">
+    <header>
+        
+        <div class="user">
+            <div class="menu">
+                <p class="userName"> <span>hello</span> <br> Mohammed</p>
+                <p class="signOut"><a href="../frame1/frame1.html">sign out</a></p>
+            </div>
+            <div class="userInfo">
+                <img src="../assets/imgs/user.svg" alt="user profile image">
+                <p><span>hello</span> <br> Mohammed</p>
+            </div>
+            <div class="exit"><img src="../assets/imgs/exit.svg" alt=""></div>
+        </div>
+        <div class="categories">
+            <p class="deActive" id="branding">Branding Records</p>
+            <p class="active" id='marketing' >Marketing Records</p>
+        </div>
+    </header>
+    <div class="mobileMenu">
+      <div class="menu">
+        <p class="question">Do you want to Exit?</p>
+        <div class="choices">
+          <a href="../frame1/frame1.html" class="yes">yes</a>
+          <a class="no">no</a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper my">
+        <div class="swiper-wrapper allRecords">
+        </div>
+           <div class="sliderControl">
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination">
+               </div>
+                <div class="swiper-button-next"></div>
+           </div>
+         </div>
+         <script src="../assets/js/logOut.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+         <script src="../assets/js/videosSlider.js"></script>
+         <script>
+           var swiper = new Swiper(".my", {
+             slidesPerView: 1,
+             spaceBetween: 30,
+             loop: true,
+             fade:'true',
+             pagination: {
+                el: '.swiper-pagination',
+              type: 'bullets',
+              bulletClass: 'swiper-pagination-number',
+              bulletActiveClass: 'swiper-pagination-number--active',
+              clickable: true,
+              renderBullet: function (index, className) {
+                return '<h5 class="number-'+ (index + 1) + ' ' + className + '"' + 'index="' + (index + 1) +'">' + (index + 1) + '</h5>';
+              }
+             },
+             navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+             },
+           });
+         </script>
+       </body>
+       </html>
