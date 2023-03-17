@@ -4,17 +4,17 @@ let desktopSignOut = document.querySelector('header .user .menu .signOut')
 let userInfo = document.querySelector('header .userInfo ')
 
 desktopMenuUser.addEventListener('click',()=>{
-    desktopMenu.style.display='none'
-    userInfo.style.display='flex'
+    desktopMenu.style.visibility='hidden'
+    userInfo.style.visibility='visible'
 })
 
 userInfo.addEventListener('click',()=>{
-    desktopMenu.style.display='flex'
-    userInfo.style.display='none'
+    userInfo.style.visibility='hidden'
+    desktopMenu.style.visibility='visible'
 
 })
 
-
+// mobile Js
 let signOut = document.querySelector('header .user .exit img')
 let mobileMenu = document.querySelector('.mobileMenu')
 let no = document.querySelector('.mobileMenu .no')

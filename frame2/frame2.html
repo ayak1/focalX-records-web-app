@@ -37,8 +37,9 @@
         </div>
       </div>
     </div>
-    <div class="swiper my">
+    <div class="swiper mySlider">
         <div class="swiper-wrapper allRecords">
+          <!-- all records get into this div by videosSlider.js -->
         </div>
            <div class="sliderControl">
                <div class="swiper-button-prev"></div>
@@ -47,30 +48,9 @@
                 <div class="swiper-button-next"></div>
            </div>
          </div>
-         <script src="../assets/js/logOut.js"></script>
+         <script src="../assets/js/signOut.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
          <script src="../assets/js/videosSlider.js"></script>
-         <script>
-           var swiper = new Swiper(".my", {
-             slidesPerView: 1,
-             spaceBetween: 30,
-             loop: true,
-             fade:'true',
-             pagination: {
-                el: '.swiper-pagination',
-              type: 'bullets',
-              bulletClass: 'swiper-pagination-number',
-              bulletActiveClass: 'swiper-pagination-number--active',
-              clickable: true,
-              renderBullet: function (index, className) {
-                return '<h5 class="number-'+ (index + 1) + ' ' + className + '"' + 'index="' + (index + 1) +'">' + (index + 1) + '</h5>';
-              }
-             },
-             navigation: {
-               nextEl: ".swiper-button-next",
-               prevEl: ".swiper-button-prev",
-             },
-           });
-         </script>
+        
        </body>
        </html>
