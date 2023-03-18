@@ -9,6 +9,10 @@
 :root{
     --main-color: #FF8500;
 }
+.container{
+    position: relative;
+    width: 100%;
+}
 nav .logo{
     padding: 32px 61px;
 }
@@ -127,26 +131,30 @@ footer .content  .copyrights{
         align-self: center;
         padding: 7px 78px;
     }
-     .desktopBack{
-        display: none;
-    }
-     .mobileBack{
-        height: 170px;
-        display: block;
-        position: absolute; 
-        bottom: 0;
-        z-index: -1;
-        width: 100vw;
-        left: 0;
-    }
-    footer .content{
-        position: absolute;
-        bottom: 10px;
-         flex-direction: column;
-         row-gap: 21px;
-         text-align: center;
-     }
-     footer .content .copyrights{
-        font-size: 0.625rem;
-    }
+   .desktopBack{
+    display: none;
+   }
+   .mobileBack{
+    width: 100%;
+    display: block;
+   }
+   footer {
+    position: relative;
+    bottom: 0;
+   }
+   footer .content {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+   }
+   footer .content .copyrights{
+    font-weight: 500;
+    font-size: 0.625rem;
+   }
 }
