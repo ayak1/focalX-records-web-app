@@ -137,6 +137,8 @@ footer .content  .copyrights{
    }
    .mobileBack{
     width: 100%;
+    position: relative;
+    bottom: 0;
     display: block;
    }
    footer {
