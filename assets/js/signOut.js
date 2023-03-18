@@ -3,14 +3,20 @@ let desktopMenu = document.querySelector('header .user .menu ')
 let desktopSignOut = document.querySelector('header .user .menu .signOut')
 let userInfo = document.querySelector('header .userInfo ')
 
+
+console.log('gf')
 desktopMenuUser.addEventListener('click',()=>{
+    if(window.screen.width > 650){
     desktopMenu.style.visibility='hidden'
     userInfo.style.visibility='visible'
+    }
 })
 
 userInfo.addEventListener('click',()=>{
+    if(window.screen.width >650){
     userInfo.style.visibility='hidden'
     desktopMenu.style.visibility='visible'
+    }
 
 })
 

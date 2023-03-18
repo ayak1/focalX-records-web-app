@@ -536,6 +536,7 @@ const loadVideos = (data) =>{
     }
     for( let j = counter-10 ; j<counter ; j++){
         re.innerHTML+=`
+        <a class='aRecord' href='../frame3/frame3.html' id=${data[j].id} >
                 <div class="record">
                     <div class="img">
                         <img src=${data[j].img} alt="">
@@ -543,7 +544,7 @@ const loadVideos = (data) =>{
                     <p class="description">
                         ${data[j].description}
                     </p>
-                </div>
+                </div></a>
         `
     }
     }
@@ -580,4 +581,5 @@ const loadVideos = (data) =>{
 }
 
 loadVideos(dataRecordsMarketing)
+
 

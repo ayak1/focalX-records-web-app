@@ -12,21 +12,46 @@
 .deActive{
     color: #938C8C;
 }
+a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 3%;
     padding-top: 23px;
 }
 header .user{
-    width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3%;
+}
+header .user .menu{
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 28px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    position: absolute;
+    z-index: 4;
+    top: -10px;
+    left: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 6px 17px 13px 8px;
+    margin-top:15px;
+}
+header .user .menu p a{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #000;
 }
 header .user .userInfo{
-    align-self: flex-start;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,9 +62,7 @@ header .user .userInfo img{
     height: 44px;
     border-radius: 50%;
 }
-/* header .user .goBack{
-    display: none;
-} */
+
 .container{
     padding: 64px 3%;
     display: flex;
@@ -92,7 +115,13 @@ header .user .userInfo img{
     display: none;
 }
 @media(max-width:650px){
-    
+    header .user{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4%;
+    }
     .container .right .videos{
         display: none;
     }

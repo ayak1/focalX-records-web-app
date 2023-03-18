@@ -17,7 +17,7 @@
 }
 a{
     text-decoration: none;
-    columns: #000;
+    color: #000;
     cursor: pointer;
 }
 .mobile-menu-hidden-overFlow {
@@ -122,6 +122,9 @@ header .categories{
     column-gap: 78px;
     font-weight: 500;
     font-size: 1.25rem;
+}
+header .categories p{
+    cursor: pointer;
 }
 .recordsContainer{
     display: flex !important;
