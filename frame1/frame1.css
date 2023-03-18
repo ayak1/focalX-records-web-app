@@ -133,7 +133,7 @@ footer .content  .copyrights{
     footer .mobileBack{
         height: 170px;
         display: block;
-        position: absolute; 
+        position: fixed; 
         bottom: 0;
         z-index: -1;
         width: 100vw;
