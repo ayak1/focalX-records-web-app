@@ -563,7 +563,7 @@ const loadVideos = (data) =>{
             let recordId = record.classList[(record.classList.length)-1]
             let path = `../frame3/frame3.html?id=${recordId}&data=${dataName}`
             window.location.href = path
-            
+        
         })
     })
     }
